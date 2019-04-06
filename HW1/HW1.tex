@@ -1,0 +1,238 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage[top=2cm, bottom=4.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\hypersetup{%
+	colorlinks=true,
+	linkcolor=blue,
+	linkbordercolor={0 0 1}
+}
+ 
+\renewcommand\lstlistingname{Algorithm}
+\renewcommand\lstlistlistingname{Algorithms} 
+\def\lstlistingautorefname{Alg.}
+
+\lstdefinestyle{Python}{
+		language        = Python,
+		frame           = lines, 
+		basicstyle      = \footnotesize,
+		keywordstyle    = \color{blue},
+		stringstyle     = \color{green},
+		commentstyle    = \color{red}\ttfamily
+}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+
+% Edit these as appropriate
+\newcommand\course{MATH 225}
+\newcommand\hwnumber{1.1}                  % <-- homework number
+\newcommand\HWnum{Homework 1}           % <-- NetID of person #1
+\newcommand\SName{Luke Mattfeld}           % <-- NetID of person #2 (Comment this line out for problem sets)
+
+\pagestyle{fancyplain}
+\headheight 35pt
+\lhead{\HWnum}
+\lhead{\HWnum\\\SName}                 % <-- Comment this line out for problem sets (make sure you are person #1)
+\chead{\textbf{\Large Section \hwnumber}}
+\rhead{\course \\ April 3, 2019}
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\headsep 1.5em
+
+\begin{document}
+
+\section*{1.}
+
+
+\begin{enumerate}[label= \textbf{\alph*)}]
+	\item This is not a proposition because it does not have a set truth value.
+	
+	\item This is a proposition. Let: \\$P = \pi$ is a rational number $\rightarrow$ False\\
+		This statement can then be written symbolically as:\\
+		$\sim (\sim P) \equiv \sim (\sim F) \equiv \sim T \equiv F$\\
+		So this statement is false.
+	
+	\item This is not a proposition, since the truth value depends on what set $x$ is an element of,
+		which is undefined here.
+	
+	\item This is not a proposition, again because of the undefined nature of $x$.
+	
+	\item This is a proposition. Let: \\
+		P = $\pi$ is rational $\rightarrow$ False\\
+		Q = 17 is prime $\rightarrow$ True\\
+		R = 7 \textless \ 13 $\rightarrow$ True\\
+		S = 81 is a perfect square $\rightarrow$ True\\
+		So, this statement can be written symbolically as:\\
+		$(P \land Q) \lor (R \land S) \equiv (T \land F) \lor (T \land T) \equiv F \lor T \equiv T$\\
+		So this statement is true.
+
+	\item This is a proposition. Let: \\
+		P = 2 is rational $\rightarrow$ True\\
+		Q = $\pi$ is irrational $\rightarrow$ True\\
+		R = $2\pi$ is rational $\rightarrow$ False\\
+		So, this statement can be written symbolically as:\\
+		$(P \land Q) \lor R \equiv (T \land T) \lor F \equiv T \lor F \equiv T$\\
+		So this statement is true.
+
+	\item This is a proposition. Let: \\
+	P = 5$\pi$ is rational $\rightarrow$ False\\
+	Q = 4.9 is rational $\rightarrow$ True\\
+	R = There are exactly four primes less than 10 $\rightarrow$ True\\
+	So, this statement can be written symbolically as:\\
+	$(P \land Q) \lor R \equiv (F \land T) \lor T \equiv F \lor T \equiv T$\\
+	So this statement is true.
+
+	\newpage
+
+	\item This is a proposition. Let: \\
+	P = -3.7 is rational $\rightarrow$ True\\
+	Q = 3$\pi$ \textless \ 10 $\rightarrow$ True\\
+	R = 3$\pi$ \textgreater \ 15 $\rightarrow$ False\\
+	So, this statement can be written symbolically as:\\
+	$P \land (Q \lor R) \equiv T \land (T \lor F) \equiv T \land T \equiv T$\\
+	So this statement is true.
+
+	\item This is a proposition. Let: \\
+	P = 39 is prime $\rightarrow$ False\\
+	Q = 64 is a power of 2 $\rightarrow$ True\\
+	So, this statement can be written symbolically as:\\
+	$\sim P \lor Q \equiv \sim F \lor T \equiv T \lor T \equiv T$\\
+	So this statement is true.
+
+	\item This statement is not a proposition, since there are more than three false statements in the book 
+	but the truth of the last part of the statement changes the truth of the entire statement in a contradictory manner.
+
+\end{enumerate}
+
+
+\section*{10.}
+\begin{enumerate}[label= \textbf{\alph*)}]
+	\item
+		\begin{displaymath}
+			\begin{array}{|c|c|c|c|c|c|c|}
+				P & Q & \sim P & \sim Q & P \land Q & \sim P \land \sim Q & (P \land Q) \lor (\sim P \land \sim Q)\\ 
+				\hline
+				T & T & F & F & T & F & T\\
+				T & F & F & T & F & F & F\\
+				F & T & T & F & F & F & F\\
+				F & F & T & T & F & T & T\\
+			\end{array}
+		\end{displaymath}
+		The output varies for different values for P and Q, so it is neither a tautology nor a contradiction.
+		
+	\item
+		\begin{displaymath}
+			\begin{array}{|c|c|c|c|}
+			P & \sim P & P \land \sim P & \sim (P \land \sim P)\\ 
+			\hline
+			T & F & F & T\\
+			F & T & F & T\\
+			\end{array}
+		\end{displaymath}
+		This is  a tautology since it evaluates to true for all possible values of P
+	\newpage
+		\item \begin{displaymath}
+			\begin{array}{|c|c|c|c|c|c|c|}
+				P & Q & \sim P & \sim Q & P \land Q & \sim P \lor \sim Q & (P \land Q) \lor (\sim P \lor \sim Q)\\ 
+				\hline
+				T & T & F & F & T & F & T\\
+				T & F & F & T & F & T & T\\
+				F & T & T & F & F & T & T\\
+				F & F & T & T & F & T & T\\
+			\end{array}
+		\end{displaymath}
+		This is  a tautology since it evaluates to true for all possible combinations
+		of values of P and Q.
+
+		\item \begin{displaymath}
+			\begin{array}{|c|c|c|c|c|c|c|c|c|}
+				P &
+				Q &
+				\sim P &
+				\sim Q &
+				P \land Q &
+				P \land \sim Q &
+				\sim P \land Q &
+				\sim P \land \sim Q\\ 
+				\hline
+				T & T & F & F & T & F & F & F\\
+				T & F & F & T & F & T & F & F\\
+				F & T & T & F & F & F & T & F\\
+				F & F & T & T & F & F & F & T\\
+			\end{array}
+		\end{displaymath}
+		\begin{displaymath}
+			\begin{array}{|c|}
+				(P \land Q) \lor (P \land \sim Q) \lor (P \land \sim Q) \lor (\sim P \land \sim Q)\\ 
+			\hline
+			T\\
+			T\\
+			T\\
+			T\\
+			\end{array}
+		\end{displaymath}
+		This is  a tautology since it evaluates to true for all possible combinations
+		of values of P and Q.
+
+		\item \begin{displaymath}
+			\begin{array}{|c|c|c|c|c|c|c|c|}
+				P &
+				Q &
+				R &
+				\sim P &
+				Q\ \land \sim P &
+				P \land R &
+				\sim (P \land R) &
+				(Q\ \land \sim P)\ \land \sim (P \land R)\\ 
+				\hline
+				T & T & T & F & F & T & F & F\\
+				T & T & F & F & F & F & T & F\\
+				T & F & T & F & F & T & F & F\\
+				T & F & F & F & F & F & T & F\\
+				F & T & T & T & T & F & T & T\\
+				F & T & F & T & T & F & T & T\\
+				F & F & T & T & F & F & T & F\\
+				F & F & F & T & F & F & T & F\\
+			\end{array}
+		\end{displaymath}
+		The output varies for different values for P, Q, and R, so it is neither a tautology nor a contradiction.
+
+		\item \begin{displaymath}
+			\begin{array}{|c|c|c|c|c|c|c|c|}
+				P &
+				Q &
+				R &
+				\sim Q &
+				\sim Q\ \land P &
+				R \lor Q &
+				(\sim Q\ \land P)\ \land (R \lor Q) &
+				P\ \lor \left [(\sim Q\ \land P)\ \land (R \lor Q)\right ]\\ 
+				\hline
+				T & T & T & F & F & T & F & T\\
+				T & T & F & F & F & T & F & T\\
+				T & F & T & T & T & T & T & T\\
+				T & F & F & T & T & F & F & T\\
+				F & T & T & F & F & T & F & F\\
+				F & T & F & F & F & T & F & F\\
+				F & F & T & T & F & T & F & F\\
+				F & F & F & T & F & F & F & F\\
+			\end{array}
+		\end{displaymath}
+		The output varies for different values for P, Q, and R, so it is neither a tautology nor a contradiction.
+
+	
+\end{enumerate}
+
+\end{document}

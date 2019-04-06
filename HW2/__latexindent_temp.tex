@@ -1,0 +1,138 @@
+\documentclass[12pt,letterpaper]{article}
+\usepackage{fullpage}
+\usepackage[top=2cm, bottom=4.5cm, left=2.5cm, right=2.5cm]{geometry}
+\usepackage{amsmath,amsthm,amsfonts,amssymb,amscd}
+\usepackage{lastpage}
+\usepackage{enumerate}
+\usepackage{fancyhdr}
+\usepackage{mathrsfs}
+\usepackage{xcolor}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{hyperref}
+\usepackage{enumitem}
+
+\hypersetup{%
+	colorlinks=true,
+	linkcolor=blue,
+	linkbordercolor={0 0 1}
+}
+ 
+\renewcommand\lstlistingname{Algorithm}
+\renewcommand\lstlistlistingname{Algorithms} 
+\def\lstlistingautorefname{Alg.}
+
+\lstdefinestyle{Python}{
+		language        = Python,
+		frame           = lines, 
+		basicstyle      = \footnotesize,
+		keywordstyle    = \color{blue},
+		stringstyle     = \color{green},
+		commentstyle    = \color{red}\ttfamily
+}
+
+\setlength{\parindent}{0.0in}
+\setlength{\parskip}{0.05in}
+
+% Edit these as appropriate
+\newcommand\course{MATH 225}
+\newcommand\hwnumber{1.2}
+\newcommand\HWnum{Homework 2}
+\newcommand\SName{Luke Mattfeld}          
+
+\pagestyle{fancyplain}
+\headheight 35pt
+\lhead{\HWnum}
+\lhead{\HWnum\\\SName}                 % <-- Comment this line out for problem sets (make sure you are person #1)
+\chead{\textbf{\Large Section \hwnumber}}
+\rhead{\course \\ April 5, 2019}
+\lfoot{}
+\cfoot{}
+\rfoot{\small\thepage}
+\headsep 1.5em
+
+\begin{document}
+
+
+\section*{1.}
+\begin{enumerate}
+	\item[\textbf{b)}]
+		Antecedent: ``The moon is made of cheese"\\
+		Consequent: ``8 is an irrational number"
+	\item[\textbf{c)}]
+		Antecedent: ``\textit{b} divides 3"\\
+		Consequent: ``\textit{b} divides 9"
+	\item[\textbf{e)}]
+		Antecedent: ``\textit{a} is convergent"\\
+		Consequent: ``A sequence \textit{a} is bounded"
+	\item[\textbf{g)}]
+		Antecedent: ``$1+1=2$"\\
+		Consequent: ``$1+2=3$" 
+	\item[\textbf{h)}]
+		Antecedent: ``The fish bite"\\
+		Consequent: ``The moon is full" 
+\end{enumerate}
+
+
+\section*{2.}
+\begin{enumerate}
+	\item[\textbf{b)}]
+		Converse: ``If 8 is an irrational number, then the moon is made of cheese"\\
+		Contrapositive: ``If 8 is not an irrational number, then the moon is not made of cheese" 
+	\item[\textbf{c)}]
+		Converse: ``\textit{b} divides 9 only if \textit{b} divides 3"\\
+		Contrapositive: ``\textit{b} does not divide 9 only if \textit{b} does not divide 3"  
+	\item[\textbf{e)}]
+		Converse: ``A sequence \textit{a} is convergent whenever \textit{a} is bounded"\\
+		Contrapositive: ``A sequence \textit{a} is not convergent whenever \textit{a} is unbounded"  
+	\item[\textbf{g)}]
+		Converse: ``$1+1=2$ is necessary for $1+2=3$"\\
+		Contrapositive: ``$1+1\neq2$ is necessary for $1+2\neq3$"  
+	\item[\textbf{h)}]
+		Converse: ``The moon is full only when the fish bite"\\
+		Contrapositive: ``The moon is not full only when the fish don't bite"  
+\end{enumerate}
+
+\newpage
+\section*{5.}
+\begin{enumerate}
+	\item[\textbf{b)}]
+		``Hexagons have size sides'' $\rightarrow$ true\\
+		``The moon is made of cheese'' $\rightarrow$ false\\
+		$T \rightarrow F \equiv F$, so this statement is false.
+	\item[\textbf{d)}]
+		``The Nile River flows east'' $\rightarrow$ false\\
+		``64 is a perfect square'' $\rightarrow$ true\\
+		$F \rightarrow T \equiv T$, so this statement is true. 
+	\item[\textbf{e)}]
+		``Earth has one moon'' $\rightarrow$ true\\
+		``The Amazon River flows into the North Sea'' $\rightarrow$ false\\
+		$T \rightarrow F \equiv F$, so this statement is false.  
+	\item[\textbf{f)}]
+		``Euclid's birthday was April 2'' $\rightarrow$ ?\\
+		``Rectangles have four sides'' $\rightarrow$ true\\
+		The antecedent is true, so this statement is true. 
+	\item[\textbf{g)}]
+		``$\sqrt{2}$ is not irrational'' $\rightarrow$ false\\
+		``5 is prime'' $\rightarrow$ true\\
+		$F \rightarrow T \equiv T$, so this statement is true. 
+	\item[\textbf{h)}]
+		``$1+1=2$'' $\rightarrow$ true\\
+		``$3 > 6$'' $\rightarrow$ false\\
+		$T \rightarrow F \equiv F$, so this statement is false. 
+\end{enumerate}
+
+
+\section*{14.}
+\begin{enumerate}[label= \textbf{\alph*)}]
+	\item "If 3 is an integer, then this class does not have a textbook."
+	\item This is not possible, since if a conditional is false it's converse
+		will always be true. This is because all other combinations of truth values
+		for P and Q in a conditional statement lead to a true statement.
+	\item "If earth is a planet, then this sentence does not exist."
+	\item This is not possible, since the contrapositive of a conditional always
+		has the same truth value of the original conditional statement. Thus a
+		false conditional can never have a true contrapositive.
+\end{enumerate}
+
+\end{document}
