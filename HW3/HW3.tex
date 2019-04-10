@@ -80,7 +80,7 @@
 	\item[\textbf{g)}] Note: Using definitions from part \textbf{f}\\
 						Let $y \in$ (All people)\\ 
 						Symbolically, the statement is:\\
-						$(\exists x)(H(x)) \land (\exists y)(\sim H(y))$
+						$[(\exists x)(H(x))] \land [(\exists y)(\sim H(y))]$
 	\item[\textbf{h)}] Let $x \in \mathbb{R}$\\
 						Symbolically, the statement is:\\
 						$(\forall x)(x \neq 0 \Rightarrow (x > 0 \lor x < 0))$ 
@@ -102,54 +102,91 @@
 
 \section*{2.}
 \begin{enumerate}[label= \textbf{\alph*)}]
-	\item[\textbf{b)}]
-	\item[\textbf{c)}]
-	\item[\textbf{d)}]
-	\item[\textbf{e)}]
-	\item[\textbf{f)}]
-	\item[\textbf{g)}]
-	\item[\textbf{h)}]
-	\item[\textbf{j)}] 
-	\item[\textbf{l)}]  
-	\item[\textbf{o)}]
-	\item[\textbf{p)}]
+	\item[\textbf{b)}] $\sim (\forall x)(P(x) \Rightarrow\ \sim B(x)) \equiv (\exists x) \sim(P(x) \Rightarrow\ \sim B(x)) \equiv (\exists x) (P(x) \land B(x))$ \\
+						``Some stones are precious and beautiful." 
+	\item[\textbf{c)}] $\sim (\exists x) (P(x) \land R(x)) \equiv (\forall x) \sim (P(x) \land R(x)) \equiv (\forall x) (\sim P(x) \lor \sim R(x))$\\
+						``All trianges are either not right or not isosceles.'' 
+	\item[\textbf{d)}] $\sim (\forall x) (P(x) \Rightarrow\ \sim I(x)) \equiv (\exists x) \sim (P(x) \Rightarrow\ \sim I(x)) \equiv (\exists x) (P(x) \lor I(x))$\\
+						``Some triangles are either right or isosceles.'' 
+	\item[\textbf{e)}] $\sim (\forall x) (\sim I(x) \Rightarrow R(x)) \equiv (\exists x)\sim (\sim I(x) \Rightarrow R(x)) \equiv (\exists x) (\sim I(x) \lor \sim R(x))$\\
+						``Some triangles are neither right nor isosceles.'' 
+	\item[\textbf{f)}] $\sim \{[(\forall x)(H(x))] \lor [(\forall x)(\sim H(x))]\} \equiv \sim[(\forall x)(H(x))] \land \sim [(\forall x)(\sim H(x))]$\\
+						$\equiv [(\exists x) (\sim H(x))] \lor [(\exists x)(H(x))]$ \\
+						``Some people are not honest or some people are honest.''
+	\item[\textbf{g)}] $\{[(\exists x)(H(x))] \land [(\exists y)(\sim H(y))]\} \equiv \ \sim [(\exists x)(H(x))] \lor \sim [(\exists y)(\sim H(y))]$\\
+						$\equiv [(\forall x)(\sim H(x))] \lor [(\forall y)(H(y))]$\\
+						``All people are not honest or everyone is honest.''
+	\item[\textbf{h)}] $\sim (\forall x)(x \neq 0 \Rightarrow (x > 0 \lor x < 0)) \equiv (\exists x) \sim (x \neq 0 \Rightarrow (x > 0 \lor x < 0))$\\
+						$\equiv (\exists x)(x \neq 0\ \land \sim (x > 0 \lor x < 0)) \equiv (\exists x)(x \neq 0\ \land (x \leq 0 \land x \geq 0))$\\
+						``There exists a nonzero real number that is greater than or equal to zero and is less than or equal to zero.''
+	\item[\textbf{j)}] $\sim (\forall x)(\exists y)(x > y) \equiv (\exists x) \sim (\exists y)(x > y) \equiv (\exists x)(\forall y)\sim (x > y) \equiv (\exists x)(\forall y) (x \leq y)$\\
+						``There exests an integer x such that for every integer y, x $\leq$ y.'' 
+	\newpage
+	\item[\textbf{l)}]  $\sim (\forall x)(\forall y)(\exists m)[(x \neq y) \Rightarrow (x > m > y) \lor (y > m > x)]$\\
+						$\equiv (\exists x)\sim (\forall y)(\exists m)[(x \neq y) \Rightarrow (x > m > y) \lor (y > m > x)]$\\
+						$\equiv (\exists x)(\exists y)\sim(\exists m)[(x \neq y) \Rightarrow (x > m > y) \lor (y > m > x)]$\\
+						$\equiv (\exists x)(\exists y)(\forall m) \sim [(x \neq y) \Rightarrow (x > m > y) \lor (y > m > x)]$\\
+						$\equiv (\exists x)(\exists y)(\forall m) [(x \neq y) \land \sim(x > m > y) \land \sim (y > m > x)]$\\
+						``There exist nonequal reals x and y such that every real number cannot be between them.''
+	\item[\textbf{o)}] $\sim (\forall x)(\exists y) (L(x,y)) \equiv (\exists x) \sim (\exists y) (L(x,y)) \equiv (\exists x)(\forall y) (\sim L(x,y))$\\
+						``Someone does not love everyone.'' 
+	\item[\textbf{p)}] $let A(x) = ((x > 0) \Rightarrow (2^y=x))$\\
+						$\sim (\forall x)(\exists! y)A(x) \equiv (\exists x)\sim (\exists! y)A(x)$\\
+						$\equiv (\exists x) \sim [(\exists x) A(X)]$
+						FIX THIS
+						``There exists some real number x such that there is no unique real y for which $(x > 0) \text{ implies } (2^y=x)$''
 \end{enumerate}
 
 \section*{6.}
 \begin{enumerate}[label= \textbf{\alph*)}]
-	\item[\textbf{b)}]
-	\item[\textbf{c)}]
-	\item[\textbf{d)}]  
+	\item[\textbf{b)}] True for \textbf{\textit{T}}
+						False for \textbf{\textit{U, V, W}}
+	\item[\textbf{c)}] True for \textbf{\textit{T, U, V}}
+						False for \textbf{\textit{W}}
+	\item[\textbf{d)}]  True for \textbf{\textit{T}}
+						False for \textbf{\textit{U, V, W}}
 \end{enumerate}
 
 \section*{7.}
 \begin{enumerate}[label= \textbf{\alph*)}]
-	\item \textbf{\textit{Proof:}}
-	\item 
+	\item \textbf{\textit{Proof:}}\\
+			$\sim (\exists x) A(x)$ is true in U\\
+			iff $(\exists x) A(x)$ is false in U\\
+			iff truth set of $A(x)$ is empty\\
+			iff truth set of $\sim A(x)$ is U\\
+			iff $(\forall x) \sim A(x)$ is true in U			
 \end{enumerate}
+
+\newpage 
 
 \section*{8.}
 \begin{enumerate}[label= \textbf{\alph*)}]
-	\item[\textbf{a)}]
-	\item[\textbf{c)}]
-	\item[\textbf{d)}]
-	\item[\textbf{f)}]
-	\item[\textbf{g)}]
-	\item[\textbf{i)}]
-	\item[\textbf{j)}]
-	\item[\textbf{k)}]
-	\item[\textbf{l)}]        
+	\item[\textbf{a)}] \textbf{F}
+	\item[\textbf{c)}] \textbf{F}
+	\item[\textbf{d)}] \textbf{F}
+	\item[\textbf{f)}] \textbf{T}
+	\item[\textbf{g)}] \textbf{F}
+	\item[\textbf{i)}] \textbf{T}
+	\item[\textbf{j)}] \textbf{F}
+	\item[\textbf{k)}] \textbf{T}
+	\item[\textbf{l)}] \textbf{T}
 \end{enumerate}
 
 \section*{12.}
 \begin{enumerate}[label= \textbf{\alph*)}]
-	\item[\textbf{b)}]
-	\item[\textbf{c)}]
-	\item[\textbf{d)}]
-	\item[\textbf{e)}]
-	\item[\textbf{f)}]
-	\item[\textbf{g)}]
-	\item[\textbf{h)}] 
+	\item[\textbf{b)}] Not always true. Two polynomails are not equall iff 
+						the coefficents are not equal at one index i. It does
+						not need to be true for every index. 
+	\item[\textbf{c)}] Similar to the last one, just said differently. This does not
+						need to be true for every pair of coefficents. 
+	\item[\textbf{d)}] This is true, as it is the definition for two polynomails
+						not being equal. Only one pair of coefficents need be different. 
+	\item[\textbf{e)}] True, since it simplifies to the same as as part \textbf{d}.
+	\item[\textbf{f)}] Not always true since it simplifies to the same as part \textbf{c}.
+	\item[\textbf{g)}] This is true, since it only requires one index of coefficents to be unequal.
+	\item[\textbf{h)}] The is true, since the premise is false for all forms of inequality
+						other than the one described by the conclusion. Again, only one
+						set of coefficents is required.
 \end{enumerate}
 
 \end{document}

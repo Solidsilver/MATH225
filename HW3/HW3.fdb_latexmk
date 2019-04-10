@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1554835801 "/Users/solidsilver/Documents/school/MATH225/HW3/HW3.tex" "/Users/solidsilver/Documents/school/MATH225/HW3/HW3.pdf" "HW3" 1554835801
-  "/Users/solidsilver/Documents/school/MATH225/HW3/HW3.aux" 1554835801 757 efaed7226bd9566611befececd2cab8f ""
-  "/Users/solidsilver/Documents/school/MATH225/HW3/HW3.tex" 1554835801 4536 b2915d70842c96dfba0098fc2790fae1 ""
+["pdflatex"] 1554922097 "/Users/solidsilver/Documents/school/MATH225/HW3/HW3.tex" "/Users/solidsilver/Documents/school/MATH225/HW3/HW3.pdf" "HW3" 1554922757
+  "/Users/solidsilver/Documents/school/MATH225/HW3/HW3.aux" 1554922097 757 c8354d10a4707610207095b921558890 ""
+  "/Users/solidsilver/Documents/school/MATH225/HW3/HW3.tex" 1554922757 8893 aff33cbfbaf444ddeba478beb954699a ""
   "/usr/local/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1511824771 3332 103109f5612ad95229751940c61aada0 ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm" 1480098698 1004 54797486969f23fa377b128694d548df ""
   "/usr/local/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex8.tfm" 1480098698 988 bdf658c3bfc2d96d3c8b02cfc1c94c20 ""
@@ -88,13 +88,13 @@
   "/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1523934492 2717033 f61a5287d9c22a39a74f1979fe3f905c ""
   "/usr/local/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1523934516 4220280 10cab8fbd7c5a7c52aba9917e190d018 ""
   "/usr/local/texlive/2018/texmf.cnf" 1523934483 577 0b39adfd7c93507ff20c9c14c2f1a33f ""
-  "HW3.aux" 1554835801 757 efaed7226bd9566611befececd2cab8f ""
-  "HW3.out" 1554835801 0 d41d8cd98f00b204e9800998ecf8427e ""
-  "HW3.tex" 1554835801 4536 b2915d70842c96dfba0098fc2790fae1 ""
+  "HW3.aux" 1554922097 757 c8354d10a4707610207095b921558890 ""
+  "HW3.out" 1554922097 0 d41d8cd98f00b204e9800998ecf8427e ""
+  "HW3.tex" 1554922757 8893 aff33cbfbaf444ddeba478beb954699a ""
   (generated)
-  "/Users/solidsilver/Documents/school/MATH225/HW3/HW3.pdf"
-  "/Users/solidsilver/Documents/school/MATH225/HW3/HW3.log"
-  "HW3.pdf"
-  "HW3.log"
   "HW3.aux"
   "HW3.out"
+  "HW3.log"
+  "HW3.pdf"
+  "/Users/solidsilver/Documents/school/MATH225/HW3/HW3.log"
+  "/Users/solidsilver/Documents/school/MATH225/HW3/HW3.pdf"
