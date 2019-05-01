@@ -45,7 +45,7 @@
 \lhead{\HWnum}
 \lhead{\HWnum\\\SName}                 % <-- Comment this line out for problem sets (make sure you are person #1)
 \chead{\textbf{\Large Section \hwnumber}}
-\rhead{\course \\ April 9, 2019}
+\rhead{\course \\ April 11, 2019}
 \lfoot{}
 \cfoot{}
 \rfoot{\small\thepage}
@@ -130,11 +130,17 @@
 						``There exist nonequal reals x and y such that every real number cannot be between them.''
 	\item[\textbf{o)}] $\sim (\forall x)(\exists y) (L(x,y)) \equiv (\exists x) \sim (\exists y) (L(x,y)) \equiv (\exists x)(\forall y) (\sim L(x,y))$\\
 						``Someone does not love everyone.'' 
-	\item[\textbf{p)}] $let A(x) = ((x > 0) \Rightarrow (2^y=x))$\\
-						$\sim (\forall x)(\exists! y)A(x) \equiv (\exists x)\sim (\exists! y)A(x)$\\
-						$\equiv (\exists x) \sim [(\exists x) A(X)]$
-						FIX THIS
-						``There exists some real number x such that there is no unique real y for which $(x > 0) \text{ implies } (2^y=x)$''
+	\item[\textbf{p)}] Let $A(x,y) = ((x > 0) \Rightarrow (2^y=x))$\\
+						$\sim (\forall x)(\exists! y)A(x,y) \equiv (\exists x)\sim (\exists! y)A(x,y)$\\
+						$\equiv (\exists x) \sim [(\exists y) A(x,y) \land (\forall a)(\forall b)(A(x,a) \land A(x,b) \Rightarrow a = b)]$\\
+						$\equiv (\exists x) [\sim(\exists y)A(x,y) \lor \sim (\forall a)(\forall b)(A(x,a)\land A(x,b) \Rightarrow a = b)]$\\
+						$\equiv (\exists x) [(\forall y)\sim A(x,y) \lor (\exists a)(\exists b)\sim (A(x,a) \land A(x,b) \Rightarrow a=b)]$\\
+						$\equiv (\exists x) [(\forall y)\sim A(x,y) \lor (\exists a)(\exists b)(A(x,a) \land A(x,b) \land a \neq b)]$\\
+						Substituting back in $A(x,y)$:\\
+						$\equiv (\exists x) [(\forall y)\sim ((x > 0) \Rightarrow (2^y=x)) \lor (\exists a)(\exists b)(((x > 0) \Rightarrow (2^a=x)) \land ((x > 0) \Rightarrow (2^b=x)) \land a \neq b)]$\\
+						$\equiv (\exists x) [(\forall y) ((x > 0) \land (2^y\neq x)) \lor (\exists a)(\exists b)(((x > 0) \Rightarrow (2^a=x)) \land ((x > 0) \Rightarrow (2^b=x)) \land a \neq b)]$\\
+						$\equiv (\exists x) [(\forall y) ((x > 0) \land (2^y\neq x)) \lor (\exists a)(\exists b)(((x > 0) \Rightarrow (2^a=x \land 2^b=x)) \land a \neq b)]$
+						``There exists a real number $x$ such that for every real y x is positive and $2^y\neq x$, or such that for some real numbers $a$ and $b$, x being positive implies that $2^a=x$ and $2^b=x$, and $a$ is not equal to $b$.''
 \end{enumerate}
 
 \section*{6.}
@@ -146,7 +152,7 @@
 	\item[\textbf{d)}]  True for \textbf{\textit{T}}
 						False for \textbf{\textit{U, V, W}}
 \end{enumerate}
-
+\newpage
 \section*{7.}
 \begin{enumerate}[label= \textbf{\alph*)}]
 	\item \textbf{\textit{Proof:}}\\
@@ -156,8 +162,7 @@
 			iff truth set of $\sim A(x)$ is U\\
 			iff $(\forall x) \sim A(x)$ is true in U			
 \end{enumerate}
-
-\newpage 
+ 
 
 \section*{8.}
 \begin{enumerate}[label= \textbf{\alph*)}]
